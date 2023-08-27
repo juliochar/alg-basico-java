@@ -1,0 +1,7 @@
+package PadroesDeProjetos;
+
+public interface CheckBox {
+	void paint();
+	
+
+}

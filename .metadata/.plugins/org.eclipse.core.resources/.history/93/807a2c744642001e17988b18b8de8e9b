@@ -1,0 +1,34 @@
+package br.com.juliok.csvDemos;
+
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.File;
+
+public class CsvDemoScanner {
+
+	public static void main(String[] args) {
+		
+		
+		try {
+			
+			Scanner sc = new Scanner(new File("/csv-demo-app/src/main/java/br/com/juliok/csvDemos/salaries.csv"));
+			System.out.println("teste");
+			sc.useDelimiter(",");
+			
+			while(sc.hasNext()) {
+				System.out.println(sc.next());
+			}
+		
+			sc.close();
+		}
+		catch(IOException err) {
+			System.out.println(err.getMessage());
+			
+		}
+		catch(Exception er) {
+			System.out.println(er.getMessage());
+		}
+
+	}
+
+}

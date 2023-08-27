@@ -1,0 +1,7 @@
+package junitdemoapp;
+
+public class CalculadoraTestes {
+	public static void main(String[] args) {
+		
+	}
+}

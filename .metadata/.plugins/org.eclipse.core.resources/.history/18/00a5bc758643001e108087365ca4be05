@@ -1,0 +1,28 @@
+package algoritmos.basico;
+
+public class FatorialDemo {
+
+	public static void main(String[] args) {
+		
+		/***
+		 * Fatorial: 4!
+		 * 4x3x2x1
+		 * 
+		 * sabendo que fatorial de 1 é igual a -é onde fica a saída da recursão
+		 * 
+		 */
+		
+
+	}
+	
+	private static Long fatorial(Long n) {
+		if(n==0 || n==1) {
+			return 1L;
+		} else {
+			return n * fatorial (n-1);
+		}
+		
+		
+	}
+
+}

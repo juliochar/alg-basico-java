@@ -1,0 +1,21 @@
+package algoritmos.basico;
+
+public class CollectionStreamBasico {
+
+	public static void main(String[] args) {
+		
+		String[] linguagens = {"java", "python", "nodejs", "ruby" };
+		
+		//String para array
+		
+		String nome = "Joao Moreira Franco";
+		
+		//char arrays
+		char[] chars = nome.toCharArray();
+		
+		System.out.println(chars);
+		
+
+	}
+
+}

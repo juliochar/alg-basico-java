@@ -1,0 +1,23 @@
+package algoritmos.basico;
+
+public class PalindromoDemo {
+
+	public static void main(String[] args) {
+		/*
+		 * frase palindromo
+		 * 
+		 * tem q remover !?,; e espaços 
+		 * 
+		 * Veja alguns exemplos de frases palíndromas: luz
+		 * azul anotaram a data da maratona roma me tem amor a grama é amarga a mãe te
+		 * ama
+		 * 
+		 * 
+		 */
+
+		String palavra;
+		int i, tamanho = 0, iguais = 0;
+
+	}
+
+}

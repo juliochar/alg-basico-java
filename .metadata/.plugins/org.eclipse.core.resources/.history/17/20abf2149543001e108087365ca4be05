@@ -1,0 +1,46 @@
+package algoritmos.basico;
+
+import java.util.Random;
+
+public class MatrizImprimirDiagonalSecundaria {
+
+	public static void main(String[] args) {
+		/***
+		 * Algoritmo basico para imprimir uma matriz e imprimir os elementos apenas da diagonal secundária
+		 * matriz 10 x 10 para ficar mais claro o exemplo 
+		 */
+		
+		final int TAM = 10;
+		int[][] matriz= new int[TAM][TAM];
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	
+	static void imprimirMatriz(int[] m) {
+		
+	}
+	
+	static void inicializarMatriz(int[][] m) {
+		Random gerador = new Random();
+		
+		for(int i=0; i<m.length; i++) {
+			for(int j =0; j<m.length;j++) {
+				m[i][j] = gerador.nextInt();
+				
+			}
+		}
+		
+	}
+
+}

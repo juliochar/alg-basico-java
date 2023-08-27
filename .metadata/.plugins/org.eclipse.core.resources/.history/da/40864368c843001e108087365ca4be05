@@ -1,0 +1,10 @@
+package PadroesProjeto.Singleton;
+
+public class DemoSingletonTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

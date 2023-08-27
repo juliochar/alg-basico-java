@@ -1,0 +1,53 @@
+package algoritmos.basico;
+
+import java.util.Scanner;
+
+public class FibonacciEnesimoTermoDemo {
+
+	public static void main(String[] args) {
+
+		/**
+		 * começa com 0, 1, 1, 2, 3
+		 * 
+		 * queremos saber qual o valor do enesimo valor da sequencia, quanto vale o
+		 * valor da posição 10 por exemplo
+		 * 
+		 * 
+		 * 
+		 */
+
+		int n = 0;
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um valor maior que zero para calculo da sequencia Fibonacci: ");
+		n = sc.nextInt();
+		
+		if (n>0) {
+			int resultado = fibonacci(n);
+			
+			System.out.println(resultado);
+			
+		}
+		
+		sc.close();
+		
+		
+
+	}
+
+	private static int fibonacci(int n) {
+
+		if (n == 1) {
+			return 0;
+		} else {
+				if (n == 2)
+					return 1;
+				else {
+					return fibonacci(n - 1) + fibonacci(n - 2);
+				}
+
+		}
+
+	}
+
+}

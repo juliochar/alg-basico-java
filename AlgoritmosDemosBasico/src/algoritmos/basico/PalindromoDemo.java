@@ -1,0 +1,60 @@
+package algoritmos.basico;
+
+import java.util.Scanner;
+
+public class PalindromoDemo {
+
+	public static void main(String[] args) {
+		/*
+		 * frase palindromo
+		 * 
+		 * tem q remover !?,; e espaços
+		 * 
+		 * Veja alguns exemplos de frases palíndromas: 
+		 * luz azul 
+		 * anotaram a data da maratona
+		 * roma me tem amor
+		 * a grama é amarga
+		 * a mãe te ama
+		 * 
+		 * 
+		 */
+
+		String palavra, copia = "";
+		String remocao;
+		int tamanho = 0, iguais = 0, diferentes = 0;
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite uma frase: ");
+		palavra = sc.nextLine();
+
+		for (int i = 0; i < palavra.length(); i++) {
+			if (palavra.charAt(i) != '!' && palavra.charAt(i) != '?' && palavra.charAt(i) != ' '
+					&& palavra.charAt(i) != '.') {
+				copia = copia + palavra.charAt(i);
+
+			}
+
+		}
+
+		System.out.println("Palavra: " + palavra);
+
+		//System.out.println("Copia: " + copia);
+
+		for (int i = 0; i < copia.length(); i++) {
+			if (copia.charAt(i) != copia.charAt((copia.length() - 1) - i)) {
+				diferentes++;
+				//achou um diferente já poderia encerrar o programa
+			}
+		}
+		
+		if(diferentes == 0 ) {
+			System.out.println("É um palindromo");
+		} else {
+			System.out.println("Não é palindromo. ");
+			
+		}
+
+	}
+
+}

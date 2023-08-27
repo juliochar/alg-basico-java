@@ -1,0 +1,28 @@
+package jdbcMysqlDemo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionFactory {
+	
+	private static final String USERNAME = "julio";
+	
+	private static final String PASSWORD="123456";
+	
+	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda";
+	
+	
+	public static Connection createConnectioToMySQL() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+			
+			return con;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+
+}

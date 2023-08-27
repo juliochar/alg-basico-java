@@ -1,0 +1,12 @@
+package JSONcomJava;
+
+import org.json.simple.parser.JSONParser;
+
+public class LerJson {
+
+	public static void main(String[] args) {
+		JSONParser parser = new JSONParser();
+
+	}
+
+}

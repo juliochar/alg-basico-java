@@ -1,0 +1,34 @@
+package algoritmos.basico;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class CollectionStreamBasico {
+
+	public static void main(String[] args) {
+		
+		String[] linguagens = {"java", "python", "nodejs", "ruby" };
+		
+		//String para array
+		
+		String nome = "Joao Moreira Franco";
+		
+		//char arrays
+		char[] chars = nome.toCharArray();
+		
+		System.out.println(chars);
+		System.out.println(chars[2]);
+		
+		
+		List numbers = Arrays.asList(1,2,3,4);
+		List result = numbers.stream()
+						.filter( e -> (e % 2) ==0)
+						.map(e -> e*2)
+						.collect(toList());
+		
+		
+		
+
+	}
+
+}

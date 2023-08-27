@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module AlgoritmosDemosBasico {
+	requires java.sql;
+	requires json.simple;
+}

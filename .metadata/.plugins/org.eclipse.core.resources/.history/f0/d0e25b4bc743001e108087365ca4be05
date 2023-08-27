@@ -1,0 +1,10 @@
+package PadroesDeProjetos;
+
+public class AbstractFactoryDemoAPP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

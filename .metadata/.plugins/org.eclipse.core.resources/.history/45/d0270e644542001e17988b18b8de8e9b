@@ -1,0 +1,18 @@
+package br.com.juliok.csvDemos;
+
+import java.util.Scanner;
+
+public class CsvDemoScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(new File("salaries.csv"));
+		sc.useDelimiter(",");
+		while(sc.hasNext()) {
+			System.out.println(sc.next());
+		}
+		
+		sc.close();
+
+	}
+
+}

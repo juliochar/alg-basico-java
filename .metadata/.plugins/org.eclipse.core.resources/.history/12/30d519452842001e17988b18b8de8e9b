@@ -1,0 +1,12 @@
+package br.com.alura.tdd.service;
+
+import org.junit.jupiter.api.*;
+
+public class ReajusteServiceTest {
+	@Test
+	public void reajusteDeveriaSerDeTresPorCentroQuandoDesempenhoForAdesejar() {
+		
+	}
+	
+
+}

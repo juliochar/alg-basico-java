@@ -1,0 +1,10 @@
+package JSONcomJava;
+
+public class LerJson {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

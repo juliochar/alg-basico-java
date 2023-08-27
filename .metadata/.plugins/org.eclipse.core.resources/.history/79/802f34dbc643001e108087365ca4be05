@@ -1,0 +1,13 @@
+package PadroesDeProjetos;
+
+public class Application {
+	private Button button;
+	private CheckBox checkbox;
+	
+	private Application(GUIFactory factory) {
+		button = factory.createButton();
+		checkbox = factory.createCheckBox();
+		
+	}
+
+}

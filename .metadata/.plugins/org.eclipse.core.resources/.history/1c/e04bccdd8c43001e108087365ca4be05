@@ -1,0 +1,71 @@
+package algoritmos.basico;
+
+public class TabelaHashDemo {
+	public static void main(String[] args) {
+		/**
+		 * Tabela Hash com vetor de inteiros
+		 * 
+		 * usando o modelo somente com vetor
+		 * 
+		 * sem lista encadeada
+		 * 
+		 * nesta tabela hash levar em conta q valores 0 são posições vazias
+		 * 
+		 */
+		
+		//trabalhar com uma tabela pequena de 15 elementos
+		// 15 elementos, 2 * 15 = 30; o primo mais próximo é : 31
+		
+		final int TAM = 31;
+		int tabela[] = new int[TAM];
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	static void iniciarTabela(int[] t) {
+		for(int i = 0; i< t.length; i++) {
+			t[i]=0;
+		}
+		
+	}
+	
+	static int funcaoHash(int chave, int tamVetor) {
+		return chave % tamVetor;
+		
+	}
+	
+	static void inserir(int[] t,int valor) {
+		int id = funcaoHash(valor, t.length);
+		
+		while(t[id] != 0) {
+			id = funcaoHash(id+1, t.length); //id +1 vai percorrer o vetor mesmo q chegue no final
+		}
+		
+		t[id] = valor;
+		
+		
+		
+	}
+	
+	static int busca(int[] t, int chave) {
+		int id = funcaoHash(chave, t.length);
+		
+		while(t[id] != 0) {
+			if(t[id] == chave) {
+				return t[id];
+			}
+			else {
+				id = funcaoHash(id+1, t.length);
+			}
+		}
+		
+		return 0;
+		
+	}
+
+}

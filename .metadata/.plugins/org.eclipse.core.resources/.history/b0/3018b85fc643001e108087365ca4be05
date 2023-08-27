@@ -1,0 +1,24 @@
+package PadroesDeProjetos;
+
+/**
+ * Fábrica Concreta
+ * 
+ */
+
+public class MacOSFactory implements GUIFactory {
+
+	@Override
+	public Button createButton() {
+		// TODO Auto-generated method stub
+		return new MacOsButton();
+	}
+
+	@Override
+	public CheckBox createCheckBox() {
+		// TODO Auto-generated method stub
+		return new MacOsCheckBox();
+		
+	}
+	
+
+}
